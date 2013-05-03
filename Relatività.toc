@@ -1,0 +1,77 @@
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Simmetrie non relativistiche}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Considerazioni generali}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Sistemi di riferimento e coordinate}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Il gruppo di Galilei}{7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Sistemi inerziali}{7}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Trasformazioni di Galileo}{7}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Struttura di gruppo}{9}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Relativit\IeC {\`a} e meccanica}{10}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Addizione delle velocit\IeC {\`a}}{10}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}I due nuotatori}{10}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Equazioni del moto di Newton}{11}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Il fluido perfetto e la conduzione del calore}{12}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}L'equazione di Schr\"{o}dinger}{13}{subsection.1.4.5}
+\contentsline {section}{\numberline {1.5}Ottica non relativistica}{14}{section.1.5}
+\contentsline {chapter}{\numberline {2}Fondamenti di relativit\IeC {\`a} speciale}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}L'equazione delle onde}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Gli assiomi di Einstein}{16}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Osservazione sui postulati}{17}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}La definizione del tempo}{17}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Le trasformazioni di Lorentz}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Condizioni sulle trasformazioni}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Trasformazioni speciali}{20}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}La pi\IeC {\`u} generale trasformazione di Lorentz}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Intervalli spaziali e temporali}{23}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Coordinate per un altro osservatore}{24}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Il cono luce}{26}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}L'iperbole invariante}{27}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Addizione delle velocit\IeC {\`a}}{29}{subsection.2.3.8}
+\contentsline {subsection}{\numberline {2.3.9}Effetto Doppler relativistico}{30}{subsection.2.3.9}
+\contentsline {subsection}{\numberline {2.3.10}Supersonic-boom}{31}{subsection.2.3.10}
+\contentsline {subsection}{\numberline {2.3.11}Onde di materia}{31}{subsection.2.3.11}
+\contentsline {chapter}{\numberline {3}Analisi tensoriale in relativit\IeC {\`a} speciale}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vettori}{33}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Notazione}{33}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Trasformazione di basi}{33}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Trasformazione inversa}{34}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Tensori $\binom {0}{N}$}{35}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}I tensori $\binom {0}{1}$: le 1-forme}{35}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}I tensori $\binom {0}{2}$}{36}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Metrica come mappa tra vettori e 1-forme}{38}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Tensori $\binom {M}{N}$}{38}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Innalzamento, abbassamento di indici e contrazione}{39}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Equazioni invarianti}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Struttura del gruppo di Lorentz}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Equazioni invarianti}{42}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Campi tensoriali}{42}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Equazione di Klein-Gordon}{43}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Equazione di Proca}{44}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Il cono luce e le relazioni causali}{44}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Curve}{45}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Quadrivelocit\IeC {\`a} e quadriaccelerazione}{46}{subsection.4.2.6}
+\contentsline {chapter}{\numberline {5}Dinamica relativistica di una particella}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Quadrimpulso, energia e forza}{47}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Equazioni del moto}{49}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Sistemi di particelle}{51}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Quadrimpulso totale}{51}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Sistema del centro di massa}{52}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Energia di soglia}{53}{subsection.5.2.3}
+\contentsline {paragraph}{Il pione}{53}{section*.2}
+\contentsline {paragraph}{Il mesone $J/\psi $}{54}{section*.3}
+\contentsline {paragraph}{Decadimento di un fotone}{54}{section*.4}
+\contentsline {paragraph}{Nelle stelle}{55}{section*.5}
+\contentsline {subsection}{\numberline {5.2.4}Decadimenti}{55}{subsection.5.2.4}
+\contentsline {paragraph}{Decadimento in volo}{56}{section*.6}
+\contentsline {subsection}{\numberline {5.2.5}Effetto Compton relativistico}{57}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Il momento angolare}{57}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Precessione di Thomas}{57}{subsection.5.3.1}
+\contentsline {chapter}{\numberline {6}Elettrodinamica covariante}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equazioni in forma covariante}{59}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Corrente elettrica}{60}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Trasformazione dei campi}{62}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Simmetrie locali}{62}{subsection.6.1.3}
+\contentsline {chapter}{\numberline {7}Principi variazionali}{65}{chapter.7}
+\contentsline {section}{\numberline {7.1}Equazioni di Eulero-Lagrange}{65}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Campo scalare}{66}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Azione per una particella}{67}{subsection.7.1.2}
