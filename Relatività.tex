@@ -505,6 +505,41 @@ gruppo di Galilei sulle caratteristiche di un'onda elettromagnetica piana.
 
 \newpage
 
+\subsection{Onde piane e velocità di fase}
+
+\newpage
+
+\subsection{La velocità di gruppo}
+
+\newpage
+
+\subsection{La velocità della luce nei dielettrici trasparenti}
+
+\newpage
+
+\subsection{L'aberrazione e l'effetto Doppler}
+
+\newpage
+.
+\newpage
+
+\section{Esperienze di fine secolo XIX}
+
+\subsection{Hoek}
+
+\newpage
+
+\subsection{Fizeau e Fresnel}
+\subsection{Michelson e Morley}
+
+\newpage
+
+\subsection{Interpretazioni}
+
+\newpage
+
+\section{Esperienze moderne}
+
 \chapter{Fondamenti di relatività speciale}
 
 \section{L'equazione delle onde}
@@ -2533,5 +2568,74 @@ Di conseguenza
 Imponendo che le variazioni risultino nulle negli estremi della curva, la condizione estremale $\delta I=0$ equivale all'equazione del moto
 \[
 \dot P^{\mu}=0
+\]
+
+\section{Azione per il campo elettromagnetico}
+Vogliamo scrivere l'azione per il campo elettromagnetico nella seguente forma:
+\[
+I = \int d^4 x \mathcal{L}_{EM}(F_{\mu\nu}, A_{\mu}) + I_{M} + I_{INT}
+\]
+Per farlo, osserviamo innanzitutto che le equazioni di Maxwell sono del primo ordine nei campi elettromagnetici e del secondo ordine nei potenziali $A_{\mu}$, e conseguentemente considereremo le componenti del campo $A_{\mu}(x)$ come le variabili dinamiche della teoria (ovvero le \emph{coordinate generalizzate}). Esistono due invarianti quadratici che si possono costruire con il tensore $F_{\mu\nu}$, ovvero:
+\[
+F^2 := F_{\mu\nu}F^{\mu\nu} = 2(\textbf{B}^2-\textbf{E}^2) \qquad ^*F^{\mu\nu}F_{\mu\nu} = 2\textbf{E}\cdot\textbf{B}
+\]
+dove abbiamo definito
+\[
+^*F^{\mu\nu}=\frac{1}{2}e^{\mu\nu\alpha\beta}F_{\alpha\beta}
+\]
+Osserviamo che quest'ultimo invariante può essere riscritto come una divergenza:
+\begin{align*}
+^*F^{\mu\nu}F_{\mu\nu} &=\frac{1}{2}e^{\mu\nu\alpha\beta}F_{\mu\nu}F_{\alpha\beta}=\frac{1}{2}e^{\mu\nu\alpha\beta}F_{\alpha\beta}(\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}) \overset{(*)}{=}e^{\mu\nu\alpha\beta}F_{\alpha\beta}\partial_{\mu}A_{\nu} = \\
+&=\partial_{\mu}(e^{\mu\nu\alpha\beta}F_{\alpha\beta}A_{\nu}) - e^{\mu\nu\alpha\beta}A_{\nu}\partial_{\mu}F_{\alpha\beta} = \partial_{\mu}(e^{\mu\nu\alpha\beta}F_{\alpha\beta}A_{\nu})
+\end{align*}
+Conseguentemente, dato il fatto che
+\[
+\int d^4x\partial_{\mu}\mathcal{O}^{\mu} = 0
+\]
+otteniamo che il secondo invariante non influisce sulla forma dell'azione. Scriviamo allora:
+\[
+\mathcal{L}_{EM} = -\frac{1}{16\pi}F_{\mu\nu}F^{\mu\nu}
+\]
+dove il fattore di normalizzazione è dovuto alla nostra scelta di utilizzare la unità gaussiane non normalizzate. Dato il fatto che $\mathcal{L}_{EM}$ non contiene le cariche elettriche, interpreteremo tale funzione come la densità lagrangiana per il campo elettromagnetico libero. L'azione per l'interazione con il campo la scriveremo supponendo che la corrente $J^{\mu}$ non dipenda dal quadripotenziale:
+\[
+I_{INT} = \int d^4 x J^{\mu}A_{\mu}
+\]
+$I_{INT}$ risulta essere invariante di gauge. Infatti, considerando la trasformazione $A_{\mu} \to A_{\mu} + \partial_{\mu}\psi$ otteniamo
+\begin{align*}
+I_{INT} &= \int d^4x(A_{\mu}+\partial_{\mu}\psi)J^{\mu} = \int d^4 x A_{\mu}J^{\mu}+\int d^4x J^{\mu}\partial_{\mu}\psi \\
+&=\int d^4 x A_{\mu}J^{\mu}+\int d^4 x \partial_{\mu}(\psi J^{\mu}) - \int d^4x \psi\partial_{\mu}J^{\mu}
+\end{align*}
+Ora, valendo $\partial_{\mu}J^{\mu}=0$ e supponendo che $\psi$ si annulli rapidamente all'infinito, è evidente che l'azione $I_{INT}$ soddisfa l'invarianza di gauge. Ribaltando il discorso, possiamo vedere la conservazione della carica come conseguenza della stessa invarianza di gauge. Per quanto riguarda, infine, l'azione corrispondente alla materia elettricamente carica $I_M$, supporremo che questa non dipenda da $A_{\mu}(x)$. Tale azione non è altrettanto univocamente determinata come le precedenti, poichè ovviamente dipende dal modello di materia che si vuole adottare. Per gli scopi dell'elettrodinamica classica, il modello a particelle puntiformi risulta sufficientemente adeguato. Di conseguenza, dato il risultato del paragrafo precedente:
+\[
+I_M = -\sum_n m_n \int _{\gamma_n}d\tau_n
+\] 
+essendo l'integrale esteso sulla linea di universo della carica corrispondente. Possiamo quindi riscrivere l'azione completa come:
+\[
+I[A^{\mu}]=-\frac{1}{16\pi}\int d^4 xF_{\mu\nu}F^{\mu\nu}+\int d^4x A_{\mu}J^{\mu} -\sum_n m_n \int _{\gamma_n}d\tau_n
+\]
+Consideriamo ora per prima cosa la variazione al primo ordine di $I_{EM}$ in $A_{\mu}$, ottenendo:
+\begin{align*}
+\delta I_{EM} &= -\frac{1}{16\pi}\int d^4 x \delta(F_{\mu\nu}F^{\mu\nu}) = -\frac{1}{8\pi}\int d^4 x F^{\mu\nu}\delta F_{\mu\nu} = -\frac{1}{4\pi}\int d^4 x F^{\mu\nu}\partial_{\mu}\delta A_{\nu} = \\
+&= -\frac{1}{4\pi}\int d^4 x\partial_{\mu}(F^{\mu\nu}\delta A_{\nu} ) + \frac{1}{4\pi}\int d^4x (\partial_{\mu}F^{\mu\nu})\delta A_{\nu} = \frac{1}{4\pi}\int d^4x (\partial_{\mu}F^{\mu\nu})\delta A_{\nu}
+\end{align*}
+Conseguentemente, annullando la variazione al primo ordine in $A_{\mu}$ dell'azione totale si ottiene:
+\[
+0 = I[A_{\mu}+\delta A_{\mu}] - I[A_{\mu}] = \delta I = \frac{1}{4\pi}\int d^4x (\partial_{\mu}F^{\mu\nu})\delta A_{\nu} + \int d^4 x J^{\mu}\delta A_{\mu}
+\]
+da cui si ricava immediatamente
+\[
+\partial_{\mu}F^{\mu\nu}+4\pi J^{\mu}=0
+\]
+Ci ricordiamo ora che 
+\[
+J^{\mu}(x) = \sum_n e_n \int _{z_n}\delta^{(4)}(x^{\mu}-z_n^{\mu}(\tau) ) dz_n^{\mu}
+\]
+dove $z_n^{\mu}$ sono le linee di universo delle singole cariche, e conseguentemente possiamo riscrivere
+\[
+\int d^4x J^{\mu} A_{\mu} = \sum_n e_n \int_{z_n} dz_n^{\mu} \int A_{\mu}(x^{\mu}) \delta^{(4)}(x^{\mu}-z_n^{\mu}(\tau) ) d^4x = \sum_n e_n \int_{z_n} A_{\mu}(z_n^{\mu})dz_n^{\mu}
+\]
+Inoltre, l'azione per le particelle cariche può essere riscritta più esplicitamente come
+\[
+1
 \]
 \end{document}
