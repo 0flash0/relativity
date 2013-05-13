@@ -1990,8 +1990,7 @@ Consideriamo un sistema di riferimento inerziale arbitrario $S$, e in esso un si
 \[
 \overline{P}^{\mu} = \sum_{i}P^{\mu}_i
 \]
-Il fatto che $\overline{P}^{\mu}$ sia ottenuto come somma di quadrivettori sembra suggerire che esso stesso sia un quadrivettore, ma di fatto il concetto non è così semplice. Infatti, se tutti gli osservatori concordassero sui $\textbf{P}$ da sommare, allora $\overline{P}^{\mu}$ sarebbe indubbiamente un quadrivettore. Ma ogni riferimento in moto rispetto a $S$ calcola la somma su un iperpiano differente, e quindi in generale ogni osservatore calcola un vettore diverso. Per far si che $\overline{P}^{\mu}$ si un quadrivettore abbiamo bisogno del seguente assioma (ovvero l'assioma fondamentale della meccanica collisionale): \emph{la somma dei quadrimpulsi di tutte le particelle entranti in una collisione puntuale è pari alla somma dei quadrimpulsi delle particelle uscenti}. E' importante osservare che le collisioni possono essere o non essere elastiche, e possono esserci più particelle in uscita che in ingresso o viceversa.\\
- Si ha quindi che in assenza di collisioni ogni singolo $P^{\mu}$ è conservato, avendo dunque lo stesso valore su ogni iperpiano di simultaneità. Se un sottoinsieme di particelle collide, invece, conservata sarà la somma dei quadrimomenti del sottoinsieme, che avrà anch'essa, grazie all'assioma, lo stesso valore su ogni iperpiano. Con questo assioma il vettore calcolato diventa indipendente dal riferimento rispetto al quale si sceglie l'iperpiano di simultaneità, cioè $\overline{P}^{\mu}$ è a tutti gli effetti un quadrivettore e la sua rappresentazione in coordinate si trasforma da un riferimento all'altro con le trasformazioni di Lorentz.
+Il fatto che $\overline{P}^{\mu}$ sia ottenuto come somma di quadrivettori sembra suggerire che esso stesso sia un quadrivettore, ma di fatto il concetto non è così semplice. Infatti, se tutti gli osservatori concordassero sui $\textbf{P}$ da sommare, allora $\overline{P}^{\mu}$ sarebbe indubbiamente un quadrivettore. Ma ogni riferimento in moto rispetto a $S$ calcola la somma su un iperpiano differente, e quindi in generale ogni osservatore calcola un vettore diverso. Per far si che $\overline{P}^{\mu}$ si un quadrivettore abbiamo bisogno del seguente assioma (ovvero l'assioma fondamentale della meccanica collisionale): \emph{la somma dei quadrimpulsi di tutte le particelle entranti in una collisione puntuale è pari alla somma dei quadrimpulsi delle particelle uscenti}. E' importante osservare che le collisioni possono essere o non essere elastiche, e possono esserci più particelle in uscita che in ingresso o viceversa. Si ha quindi che in assenza di collisioni ogni singolo $P^{\mu}$ è conservato, avendo dunque lo stesso valore su ogni iperpiano di simultaneità. Se un sottoinsieme di particelle collide, invece, conservata sarà la somma dei quadrimomenti del sottoinsieme, che avrà anch'essa, grazie all'assioma, lo stesso valore su ogni iperpiano. Con questo assioma il vettore calcolato diventa indipendente dal riferimento rispetto al quale si sceglie l'iperpiano di simultaneità, cioè $\overline{P}^{\mu}$ è a tutti gli effetti un quadrivettore e la sua rappresentazione in coordinate si trasforma da un riferimento all'altro con le trasformazioni di Lorentz.
 \\
 Dato il fatto che $P_{\mu}P^{\mu}=-m^2$, definiamo la \textbf{massa invariante} per un sistema di particelle come
 \[
@@ -2020,12 +2019,12 @@ M>\sum_i m_i
 La (\ref{eq:invariant}) mostra che l'energia interna (cinetica, ad esempio) del sistema contribuisce alla massa invariante, un aspetto dell'equivalenza massa-energia. 
 
 \subsection{Sistema del centro di massa}
-Come si è visto, il quadrimpulso di una particella, essendo parallelo alla quadrivelocità, è sempre un vettore time-like; $\overline{P}^{\mu}$ quindi, in quanto somma di quadrimpulsi, è anch'esso un vettore time-like (si noti che questo rimane è vero anche nel caso in cui alcune delle particelle considerate sono fotoni, e diventa falso solo nel caso in cui tutte le particelle hanno massa a riposo $0$ e viaggano nelle stessa direzione). Si ha quindi che deve esistere sempre un sistema di riferimento in cui $\overline{P}^{\mu} = (M,0)$ (dove $M$ è la massa invariante del sistema di particelle), chiameremo questo SDR \textbf{Sistema del centro di massa (CM)}. \\
-Va notato che il sistema non è unico, in quanto esiste un intera classe di sistemi, tutti differenti al più per traslazioni e rotazioni, in cui $\overline{P}^{\mu} = 0$. È quindi più corretto parlare di sistema ZM (\textit{zero momentum frame}), in quanto la posizione del centro di massa, definito classicamente come $r_{CM} = \frac {\sum_{i=0}^N r_i m_i}{\sum_{i=0}^N m_i}$, non è unica e dipende dall'osservatore poichè la massa non è invariante di lorentz.\\
-Per un sistema $S$ che si muove con velocità $\textbf{u}_{ZM}$ rispetto al sistema ZM, si ha:
+Come si è visto, il quadrimpulso di una particella essendo parallelo alla quadrivelocità, è sempre un vettore time-like; $\overline{P}^{\mu}$ quindi, in quanto somma di quadrimpulsi, è anch'esso un vettore time-like (si noti che questo rimane è vero anche nel caso in cui alcune delle particelle considerate sono fotoni, e diventa falso solo nel caso in cui tutte le particelle hanno massa a riposo $0$ e viaggano nelle stessa direzione). Si ha quindi che deve esistere sempre un sistema di riferimento in cui $\overline{P}^{\mu} = (M,0)$ (dove $M$ è la massa invariante del sistema di particelle), chiameremo questo SDR \textbf{Sistema del centro di massa (CM)}. \\
+Va notato che il sistema non è unico, in quanto esiste un intera classe di sistemi, tutti differenti al più per traslazioni e rotazioni, in cui $\overline{P}^{\mu} = 0$. È quindi più corretto parlare di sistema ZM (\textit{zero momentum frame}), in quanto la posizione del centro di massa, definito classicamente come $r_{CM} = \frac {\sum_{i=0}^N r_i m_i}{\sum_{i=0}^N m_i}$, non è unica e dipende dall'osservatore, poichè la massa non è invariante di lorentz.\\
+Per un sistema $S$ che si muove con velocità $u_{ZM}$ rispetto al sistema ZM, si ha:
 
 \begin{equation}
-\overline{P}_S = M \gamma(u_{ZM} (1,\textbf{u}_{ZM})
+P_s
 \end{equation}
 
 
@@ -2643,129 +2642,8 @@ dove $z_n^{\mu}$ sono le linee di universo delle singole cariche, e conseguentem
 \[
 \int d^4x J^{\mu} A_{\mu} = \sum_n e_n \int_{z_n} dz_n^{\mu} \int A_{\mu}(x^{\mu}) \delta^{(4)}(x^{\mu}-z_n^{\mu}(\tau) ) d^4x = \sum_n e_n \int_{z_n} A_{\mu}(z_n^{\mu})dz_n^{\mu}
 \]
-Per quanto riguarda l'azione libera, $I_M$, se le particelle hanno massa non nulla possiamo adottare l'azione
+Inoltre, l'azione per le particelle cariche può essere riscritta più esplicitamente come
 \[
-I_M = -\sum_n m_n \int _{z_n} \sqrt{-dz_n^{\mu}dz_{n\mu}}
+1
 \]
-Questa picture ci suggerisce la possibilità di calcolare la variazione dell'azione non più rispetto ad $A_{\mu}$, quanto piuttosto rispetto a $z^{\mu}$. Conseguentemente, supponendo che le $z^{\mu}$ risultino nulle ai bordi delle traiettorie:
-\[
-0 = \delta I = -\sum_n m_n \int _{z_n} \delta\sqrt{-dz_n^{\mu}dz_{n\mu}} + \sum e_n \int_{z_n}\partial_{\nu}A_{\mu}\delta z_{n}^{\nu} + \sum_n e_n \int_{z_n}A_{\mu}d(\delta z_n^{\mu})
-\]
-Il terzo termine, tramite integrazione per parti e teorema di Gauss, può essere riscritto come:
-\[
-\sum_n e_n \int_{z_n}A_{\mu}d\delta z_n^{\nu} = -\sum_n e_n \int_{z_n} (dA_{\mu})\delta z_n^{\nu}
-\]
-Quindi riordinando gli utili due termini otteniamo (NON CHIARO!):
-\[
-\sum_n e_n \int_{z_n} ( \partial_{\nu}A_{\mu}\delta z_n^{\nu}dz_n^{\mu} -\partial_{\mu}A_{\nu}\delta z_n^{\nu}dz_n^{\mu} ) = \sum_n e_n \int_{z_n} F_{\nu\mu}(z_n) \delta z_n^{\nu}d z_n^{\mu}
-\]
-Possiamo a questo punto scambiare gli indici muti per ottenere
-\[
-\sum_n e_n \int_{z_n} F_{\mu\nu}(z_n) \delta z_n^{\mu}d z_n^{\nu}
-\]
-Ricordando inoltre, dal paragrafo precedente, che
-\[
-\delta\left( -m \int_{z_n} \sqrt{-dz_n^{\mu}dz_{n\mu}} \right) = -\int_{z_n}\frac{dP^{\mu}}{d\tau}\delta z_{\mu}d\tau
-\]
-possiamo infine esprimere la variazione totale come
-\begin{align*}
-0 = \delta I &= -\sum_n \left( \int_{z_n}\frac{dP^{\mu}}{d\tau}\delta z_{\mu}d\tau_n + e_n \int_{z_n}F_{\mu\nu}\frac{dz_n^{\nu}}{d\tau_n}\delta z_n^{\mu}d\tau_n  \right) = \\
-&= -\sum_n \int_{z_n} d\tau_n \left[ -\frac{dP_n^{\mu}}{d\tau_n}+e_nF_{\mu\nu}U_n^{\nu} \right]\delta z_n^{\mu}
-\end{align*}
-Otteniamo cioè un'equazione del moto Lorentz-invariante (ovviamente: infatti l'azione è l'integrale di una densità lagrangiana covariante) per le cariche:
-\[
-\frac{dP_n^{\mu}}{d\tau_n}=e_nF^{\mu}_{\nu}U_n^{\nu}
-\]
-da cui si ricava, per una singola particella
-\[
-\gamma \frac{dU^{\mu}}{dt}=\frac{e}{m}F^{\mu}_{\nu}U^{\nu}
-\]
-e si deduce la generalizzazione relativistica della forza di Lorentz e l'equazione del lavoro:
-\[
-\frac{d\gamma v^i}{dt} = \frac{e}{m}(E_i+(\textbf{v}\times \textbf{B})^i) \qquad \gamma\frac{d\gamma}{dt} = \frac{e}{m}E_iv^i
-\]
-Osserviamo quindi che la relatività conserva in grembo il fatto che il campo magnetico non compie lavoro. 
-
-\section{Il tensore energia-impulso}
-
-\subsection{Il caso generale}
-
-Se la densità lagrangiana $\mathcal{L}=\mathcal{L}(\phi_{A}, \partial\phi_{A})$ (dove $A$ è un insieme di indici) non dipende esplicitamente dalle coordinate, si ha:
-\begin{align*}
-\partial_{\mu}\mathcal{L} &= \frac{\partial\mathcal{L}}{\partial\phi_A}\partial_{\mu}\phi_A+\frac{\partial\mathcal{L}}{\partial\partial_{\mu}\phi_A}\partial_{\nu}\partial_{\mu}\phi_A = \\
-&= \frac{\partial\mathcal{L}}{\partial\phi_A}\partial_{\mu}\phi_A + \partial_{\nu}\left( \frac{\partial\mathcal{L}}{\partial\partial_{\nu}\phi_A}\partial_{\mu}\phi_A \right) - \partial_{\nu}\left( \frac{\partial\mathcal{L}}{\partial\partial_{\nu}\phi_A} \right)\partial_{\mu}\phi_A = \\
-&= \left(\frac{\partial\mathcal{L}}{\partial\phi_A} -  \partial_{\nu} \frac{\partial\mathcal{L}}{\partial\partial_{\nu}\phi_A} \right)\partial_{\mu}\phi_A + \partial_{\nu}\left( \frac{\partial\mathcal{L}}{\partial\partial_{\nu}\phi_A}\partial_{\mu}\phi_A \right)
-\end{align*}
-Nel paragrafo (7.1) avevamo affermato che 
-\[
-\frac{\delta I}{\delta\phi_A(x)} \equiv \frac{\partial\mathcal{L}}{\partial\phi_A} -  \partial_{\nu} \frac{\partial\mathcal{L}}{\partial\partial_{\nu}\phi_A}
-\]
-e dato il fatto che l'energia si conserva se e solo se sono soddisfatte le equazioni del moto di Eulero-Lagrange, che sono soddisfatte se e soltanto se $\frac{\delta I}{\delta\phi_A(x)}=0$, otteniamo la condizione che tutto ciò è equivalente al fatto che $\partial_{\mu}\mathcal{L}$ risulti essere una quadri-divergenza. Quindi, riscrivendo 
-\[
-\partial_{\mu}\mathcal{L} = \partial_{\nu}(\delta_{\mu}^{\nu}\mathcal{L})
-\]
-e definendo il tensore
-\begin{equation}
-T_{\mu}^{\nu} = \delta_{\mu}^{\nu}-\frac{\partial\mathcal{L}}{\partial\partial_{\nu}\phi_A}\partial_{\mu}\phi_A
-\end{equation}
-detto \textbf{tensore energia impulso canonico}, otteniamo le quattro equazioni
-\begin{equation}\label{eq:7.4}
-\partial_{\nu}T_{\mu}^{\nu}=0
-\end{equation}
-La legge \eqref{eq:7.4} è la legge di conservazione del tensore energia impulso. Possiamo osservare che:
-\[
-P_{\mu} = \int_{\Sigma} T^0_{\mu}(t,\textbf{x})d^3x
-\]
-relazione suggerita dal fatto che la componente $T^0_0$ del tensore è una densità di energia. Infatti:
-\[
--T^0_0 = \partial_0\phi_A\frac{\partial\mathcal{L}}{\partial\partial_0\phi_A}-\mathcal{L}
-\]
-ricordando che l'energia ottenuta attraverso una Lagrangiana è pari a:
-\[
-E = \dot q \frac{\partial L}{\partial \dot q}-L
-\]
-Questo significa che, ripristinando $c$, $-cP^0$ è l'energia del sistema, in accordo con le proprietà generali del quadrimpulso. Osserviamo ora che in generale il tensore energia impulso non è simmetrico, ma anzi le sue proprietà di simmetria sono legate ad una caratteristica imporante di sistemi fisici. Scrivendo infatti
-\[
-T^{\mu\nu} = \eta^{\alpha\nu}T_{\alpha}^{\mu}
-\]
-possiamoo esplicitare il seguente prodotto antisimmetrico
-\[
-J^{0\mu\nu} = T^{0\mu}x^{\nu}-T^{0\nu}x^{\mu}
-\]
-che corrisponde ad una \textbf{densità di momento angolare}. Possiamo subito notare che (?? non sono molto convinto!!)
-\begin{align*}
-\partial_{\alpha}J^{\alpha\mu\nu} &= \partial_{\alpha}(T^{\alpha\mu}x^{\nu}-T^{\alpha\nu}x^{\mu}) = \partial_{\alpha}(T^{\alpha\mu}x^{\nu})-\partial_{\alpha}(T^{\alpha\nu}x^{\mu}) = \\
-&= x^{\nu}\partial_{\alpha}T^{\alpha\mu}+T^{\alpha\mu}\partial_{\alpha}x^{\mu} \ldots
-\end{align*}
-cioè
-\[
-\partial_{\alpha}J^{\alpha\mu\nu}= T^{\nu\mu}-T^{\mu\nu} = 0 \Longleftrightarrow T^{\mu\nu} \text{ è simmetrico}
-\]
-Da ciò deriva che il significato fisico dell'eventuale simmetria del tensore energia impulso è la conservazione del momento angolare orbitale. Tipicamente la simmetria non si manifesta quando il sistema contiene un momento angolare intrinseco (spin). 
-
-\subsection{Ambiguità di $T^{\nu}_{\mu}$}
-La non univocità della lagrangiana si riflette ovviamente sulla forma del tensore $T^{\nu}_{\mu}$. Oltre a questo, però, esiste anche un'ambiguità di carattere più profondo che vogliamo adesso descrivere. Consideriamo il nuovo tensore energia impulso
-\begin{equation}
-^1 T_{\nu}^{\mu}=T_{\mu}^{\nu}+\partial_{\alpha}\xi^{\alpha\mu\nu} \qquad \xi^{\alpha\mu\nu} = -\xi^{\mu\alpha\nu}
-\end{equation}
-Allora la legge di conservazione \eqref{eq:7.4} rimane valida. Infatti, sfruttando l'antisimmetria di $\xi$, detto \textbf{tensore di Rosenberg-Belinfante}, otteniamo:
-\[
-\partial_{\mu}(\partial_{\alpha}\xi^{\alpha\mu\nu}) = \partial_{\alpha}(\partial_{\mu}\xi^{\mu\alpha\nu}) = - \partial_{\mu}(\partial_{\alpha}\xi^{\alpha\mu\nu}) \Longrightarrow 2\partial_{\mu}(\partial_{\alpha}\xi^{\alpha\mu\nu}) = 0
-\]
-da cui
-\[
-\partial^{\mu} (^1 T_{\mu}^{\nu}) = \partial^{\mu} T_{\mu}^{\nu}
-\]
-Inoltre, dal teorema di Gauss segue che il quadrimpulso totale non cambia se $\xi^{\alpha\mu\nu}$ si annulla in maniera sufficientemente rapida da annullare il suo flusso attraverso i bordi all'infinito. L'ambiguità qui discussa del tensore energia impulso non è così \emph{deprecabile}, in quanto ci permetterà sempre di renderlo simmetrico. 
-
-\subsection{Significato delle componenti}
-Abbiamo già osservato nel primo paragrafo che $T^{00}$ rappresenta la densità di energia e $G^{k} \equiv c^{-1}T^{0k}$ la densità di quantità di moto. Scriviamo allora la seguente equazione di trasformazione:
-\[
-\partial_{\mu}T^{\mu 0}=0 \Longrightarrow \frac{1}{c}\frac{\partial T^{00}}{\partial t} = -\partial_i T^{i0}
-\]
-che integrata attraverso il teorema di Gauss produce
-\[
-\frac{\partial E(V)}{\partial t} = \frac{\partial}{\partial t} \int_{V} T^{00} d^3x = -c \int_{\partial V} T^{i0}n_idS
-\]
-permettendoci di interpretare $cT^{i0}$ come flusso di energia nella direzione i-esima, dato il fatto che $E(V)$ rappresenta l'energia contenuta nel volume $V$. 
 \end{document}
