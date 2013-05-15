@@ -2732,10 +2732,11 @@ possiamoo esplicitare il seguente prodotto antisimmetrico
 \[
 J^{0\mu\nu} = T^{0\mu}x^{\nu}-T^{0\nu}x^{\mu}
 \]
-che corrisponde ad una \textbf{densità di momento angolare}. Possiamo subito notare che (?? non sono molto convinto!!)
+che corrisponde ad una \textbf{densità di momento angolare}. Possiamo subito notare che, ricordando $\partial_{\alpha}x^{\nu} = \delta_{\alpha}^{\nu}$:
 \begin{align*}
-\partial_{\alpha}J^{\alpha\mu\nu} &= \partial_{\alpha}(T^{\alpha\mu}x^{\nu}-T^{\alpha\nu}x^{\mu}) = \partial_{\alpha}(T^{\alpha\mu}x^{\nu})-\partial_{\alpha}(T^{\alpha\nu}x^{\mu}) = \\
-&= x^{\nu}\partial_{\alpha}T^{\alpha\mu}+T^{\alpha\mu}\partial_{\alpha}x^{\mu} \ldots
+\partial_{\alpha}J^{\alpha\mu\nu} &= \partial_{\alpha}(T^{\alpha\mu}x^{\nu}-T^{\alpha\nu}x^{\mu}) = \partial_{\alpha}(T^{\alpha\mu}x^{\nu})-\partial_{\alpha}(T^{\alpha\nu}x^{\mu}) \\
+&= x^{\nu}\partial_{\alpha}T^{\alpha\mu}+T^{\alpha\mu}\partial_{\alpha}x^{\mu} -x^{\mu}\partial_{\alpha}T^{\alpha\nu}-T^{\alpha\nu}\partial_{\alpha}x^{\mu} \\
+&= \delta_{\alpha}^{\nu}T^{\alpha\mu} - \delta_{\alpha}^{\mu}T^{\alpha\nu} = T^{\nu\mu}-T^{\mu\nu}
 \end{align*}
 cioè
 \[
@@ -2767,5 +2768,184 @@ che integrata attraverso il teorema di Gauss produce
 \[
 \frac{\partial E(V)}{\partial t} = \frac{\partial}{\partial t} \int_{V} T^{00} d^3x = -c \int_{\partial V} T^{i0}n_idS
 \]
-permettendoci di interpretare $cT^{i0}$ come flusso di energia nella direzione i-esima, dato il fatto che $E(V)$ rappresenta l'energia contenuta nel volume $V$. 
+permettendoci di interpretare $cT^{i0}\equiv S^i$ (il \textbf{vettore di Poynting}) come flusso di energia nella direzione i-esima, dato il fatto che $E(V)$ rappresenta l'energia contenuta nel volume $V$. Allo stesso modo possiamo scrivere:
+\[
+\frac{1}{c}\frac{\partial T^{0k}}{\partial t} = -\partial_i T^{ik}
+\]
+che integrata come in precedenza restituisce
+\[
+\frac{\partial P^k(V)}{\partial t} = - \int_{\partial V}T^{ik}n_i dS
+\]
+e dunque interpretiamo le componenti $T^{ik}$ come flusso della k-esima componente dell'impulso nell'i-esima direzione. Ci si riferisce a tali componenti come alla componenti del \textbf{tensore degli sforzi}, poichè il flusso di impulso attraverso una superficie determina la forza agente sulla medesima. 
+\\
+Per concludere, se consideriamo il vettore $\textbf{G}$ di componenti $G^k = c^{-1}T^{0k}$ ed il vettore $\textbf{S}$ di componenti $S^k = cT^{k0}$ possiamo scrivere, nel caso in cui il tensore energia impulso sia simmetrico
+\[
+\textbf{G}=\frac{1}{c^2}\textbf{S}
+\]
+risultato noto con il nome di \textbf{teorema di Planck}: \emph{ad ogni corrente di energia è associato un trasporto di quantità di moto}. Tale teorema è una generalizzazione dell'equivalenza massa-energia, estesa però ai campi.  
+
+\subsection{Campo scalare}
+La Lagrangiana che abbiamo considerato nel paragrafo (7.1.1) per un campo scalare può essere riscritta in una forma più generale, in cui il termine quadratico viene assorbito dal potenziale:
+\[
+\mathcal{L} = -\frac{1}{2}\partial_{\mu}\phi\partial^{\mu}\phi-V(\phi)
+\]
+(??)
+
+\subsection{Campo elettromagnetico}
+La Lagrangiana del campo elettromagnetico così come l'abbiamo scritta in precedenza è data da:
+\[
+\mathcal{L} = -\frac{1}{16\pi}F_{\mu\nu}F^{\mu\nu}
+\]
+Per calcolare la derivata di $\mathcal{L}$, scriviamo la variazione
+\[
+\delta \mathcal{L} = -\frac{1}{8\pi}F^{\mu\nu}\delta F_{\mu\nu}=-\frac{1}{8\pi}F^{\mu\nu}(\delta \partial_{\mu}A_{\nu} -\delta\partial_{\nu}A_{\mu} ) = -\frac{1}{4\pi}F^{\mu\nu}\delta\partial_{\mu}A_{\nu}
+\]
+da cui banalmente
+\[
+\frac{\partial \mathcal{L}}{\partial\partial_{\mu}A_{\alpha}}=-\frac{1}{4\pi}F^{\mu\alpha}
+\]
+Ciò significa che il tensore energia-impulso per il campo elettromagnetico è pari a:
+\begin{equation}\label{eq:7.6}
+T^{\mu}_{\nu} = -\frac{1}{16\pi}F_{\alpha\beta}F^{\alpha\beta}\delta^{\mu}_{\nu}+\frac{1}{4\pi}F^{\mu\alpha}\partial_{\nu}A_{\alpha}
+\end{equation}
+(dove è necessario ricordare che nella definizione, $\phi_A$ ha un set di indici $A$ generalmente diversi da $\mu$ e $\nu$). La non invarianza di Gauge di questo tensore è manifesta (dovuta al termine in $\partial_{\mu}A_{\nu}$), e altrettanto la sua non-simmetria. Conseguentemente la forma della \eqref{eq:7.6} non è soddisfacente. Ricordando però la libertà concessa dal tensore di Belinfante, possiamo arbitrariamente aggiungere un termine all'espressione e riscriverla come:
+\begin{equation}\label{eq:7.7}
+\begin{split}
+T^{\mu}_{\nu} &= -\frac{1}{16\pi}F_{\alpha\beta}F^{\alpha\beta}\delta^{\mu}_{\nu}+\frac{1}{4\pi}F^{\mu\nu}\partial_{\mu}A_{\nu}-\frac{1}{4\pi}F^{\mu\alpha}\partial_{\alpha}A_{\nu}  \\
+&= -\frac{1}{16\pi}F_{\alpha\beta}F^{\alpha\beta}\delta^{\mu}_{\nu}+\frac{1}{4\pi}F^{\mu\alpha}F_{\nu\alpha}
+\end{split}
+\end{equation}
+Adesso il tensore è evidentemente simmetrico ed invariante di gauge. Analizziamo le sue componenti. Per prima cosa, la densità di energia è data da:
+\[
+T^{00} = -\frac{1}{16\pi}F_{\alpha\beta}F^{\alpha\beta}\delta^0_0 +\frac{1}{4\pi}F^{0\alpha}F_{0\alpha} = -\frac{1}{16\pi}2(\textbf{E}^2-\textbf{B}^2) + \frac{1}{4\pi}\textbf{E}^2 = \frac{1}{8\pi}(\textbf{E}^2+\textbf{B}^2)
+\]
+Il vettore di Poynting $\textbf{S}$ va scritto come (osservando da subito che $\delta_0^i =0$ visto che $i=1,2,3$):
+\[
+T^{i0} = \frac{1}{4\pi} e^{ik}B_iE_k = \frac{1}{4\pi}(\textbf{E}\times \textbf{B})
+\]
+Infine, il tensore degli sforzi, chiamato in questo caso \textbf{tensore degli sforzi di Maxwell}, assume la forma:
+\[
+T_{ik} = \frac{1}{4\pi}\left( \frac{1}{2}(\textbf{E}^2+\textbf{B}^2)\delta_{ik}-E_iE_k-B_iB_k \right)
+\]
+(perchè il quadrimomento non può essere spacelike?? Che cazzo significa tutta quella roba a pagina 72??) \\ \\
+Possiamo osservare che se $\sigma$ è la superficie di un dielettrico con normale esterna $\textbf{n}$, la forza esercitata dal campo sull'elemento di superficie $d\sigma$ è
+\[
+df_i = -T_{ik}n_kd\sigma
+\]
+Per questo a volte è il tensore $\sigma_{ik}=-T_{ik}$ ad essere chiamato tensore degli sforzi di Maxwell. Infine, notiamo che il tensore $T^{\mu\nu}$ è conservato solo in assenza di cariche e correnti. Infatti, utilizzando le equazioni di Maxwell si ricava (ricordando che $\delta^{\mu}_{\nu}\partial_{\mu} = \partial_{\nu}$) :
+\[
+\partial_{\mu}T^{\mu}_{\nu} = \frac{1}{4\pi}\left( -\frac{1}{2}F_{\alpha\beta}\partial_{\nu}F^{\alpha\beta}+F^{\mu\alpha}\partial_{\mu}F_{\nu\alpha}+F_{\nu\alpha}\partial_{\mu} F^{\mu\nu} \right) 
+\]
+Ricordando le equazioni di Maxwell:
+\[
+\partial_{\mu}F^{\mu\alpha} = -4\pi J^{\alpha} \qquad \sum_{\text{ciclica}} \partial_{\nu}F^{\alpha\beta} = 0
+\]
+possiamo riscrivere
+\[
+\partial_{\mu}T_{\nu}^{\mu} = \frac{1}{4\pi} \left( \frac{1}{2\pi}F_{\alpha\beta}\partial_{\alpha}F^{\nu\beta}+\frac{1}{2}F_{\alpha\beta}\partial_{\beta}F^{\alpha\nu}+F_{\mu\nu}\partial_{\mu}F^{\nu\alpha}-4\pi F_{\nu\alpha}J^{\alpha} \right)
+\]
+Permutando gli indici si può dimostrare che i primi tre termini si cancellano vincendevolmente, e di conseguenza otteniamo
+\begin{equation}\label{eq:7.8}
+\partial_{\mu}T^{\mu}_{\nu} = -F_{\nu\alpha}J^{\alpha}
+\end{equation}
+La componente temporale della \eqref{eq:7.8} rappresenta l'equazione di bilancio energetico:
+\[
+\frac{\partial T^{00}}{\partial t}+\boldsymbol{\nabla}\cdot \textbf{S}=-\textbf{E}\cdot \textbf{J}
+\]
+
+\subsection{Fluido perfetto}
+L'idrodinamica relativistica presenta un interesse di principio, perchè dovrebbe essere applicata non solo quando è relativistica la velocità macroscopica del fluido, ma anche quando è tale la velocità microscopica delle particelle che lo compongono.\\
+Consideriamo $\mu=mn_0$ la \emph{densità di massa} del fluido, dove $n_0$ rappresenta il numero di particelle per unità di volume proprio (volume a riposo) del fluido, ed m la massa propria delle particelle. Se $\varepsilon$ è l'energia interna per unità di massa e $s$ l'entropia per unità di massa, vale, nel sistema di riferimento in quiete con il fluido, la relazione termodinamica:
+\[
+d\varepsilon = Tds + \frac{P}{\mu^2}d\mu
+\] 
+Se il moto del fluido è isoentropico (cioè $ds=0$), si possono allora pensare $P$ ed $\varepsilon$ come funzioni univoche di $\mu$. Allora scriviamo:
+\[
+\varrho = \mu +\mu\varepsilon(\mu) \qquad P=\mu^2\frac{d\varepsilon}{d\mu}
+\]
+Possiamo riscrivere la condizione di isoentropia, osservando che
+\[
+\varepsilon(\mu) = \frac{\varrho-\mu}{\mu} =\frac{\varrho}{\mu}-1 \Longrightarrow d\varepsilon = d\left( \frac{\varrho}{\mu} \right)
+\]
+Inoltre
+\[
+d\left( \frac{P}{\mu} \right) = -\frac{P}{\mu^2}d\mu +\frac{1}{\mu}dP \Longrightarrow  -\frac{P}{\mu^2}d\mu = d\left( \frac{P}{\mu} \right) - \frac{1}{\mu}dP
+\]
+Dunque
+\begin{equation}\label{eq:7.9}
+0 = Tds = d\left( \frac{\varrho+P}{\mu} \right) - \frac{1}{\mu}dP
+\end{equation}
+Utilizzeremo questa relazione a breve, ma determiniamo prima il tensore energia impulso del fluido isoentropico (o prfetto). Come abbiamo detto precedentemente, il flusso di momento attraverso un elemento di superficie $d\sigma$ equivale alla forza agente su tale elemento di superficie. Quindi $df_i = -T_{ik}d\sigma_{k}$ è la i-esima componente della forza agente. Introduciamo ora una sistema di riferimento in cui un dato volume di fluido è a riposo. In un tale sistema di riferimento è valida la legge di Pascal, ovvero: \emph{la pressione $P$ applicata su una qualunque parte del corpo è trasmessa equamente in tutte le direzioni ed è ovunque perpendicolare alla superficie su cui agisce}. Quindi possiamo scrivere $-T_{ik}d\sigma_{k} = Pd\sigma_{i}$, ovvero il tensore degli sforzi può essere scritto come $T_{ik} = -P\delta_{ik}$. Inoltre, indichiamo con $\rho$ la densità di energia. A questo punto il tensore energia impulso assume la forma:
+\[
+^0T^{\mu\nu} =
+\left( \begin{array}{cccc}
+\varrho & 0 & 0 & 0 \\
+0 & P & 0 & 0 \\
+0 & 0 & P & 0 \\
+0 & 0 & 0 & P \\
+\end{array}\right)
+\]
+Adesso, per estendere il tensore ad un qualsiasi sistema di riferimento, introduciamo la quadrivelocità $U^{\mu}$ per il moto macroscopico di un volumetto di fluido. Nel sistema di riferimento in quiete con il volumetto abbiamo ovviamente $U^{\mu}=(1,0)$, e la forma del nuovo tensore deve essere scelta in modo tale che si riduca alla matrice precedentemente presentata nel sistema in quiete. Cioè:
+\begin{equation}
+T^{\mu\nu} = (P+\varrho)U^{\nu}U^{\mu}+\eta^{\mu\nu}P
+\end{equation}
+Inoltre, siccome la traccia è invariante per cambi di base, si nota subito che
+\[
+T^{\mu\mu} = 3P-\varrho
+\]
+Le componenti del tensore sono fornite da:
+\[
+\begin{split}
+&T^{00} = (\varrho+P)U^0U^0-P = \gamma^2(\varrho+P)-P= \frac{\varrho+v^2/c^2 P}{1-v^2/c^2} \\
+&T^{0i} = (\varrho+P)U^0U^i+P\eta^{0i} = \frac{(\rho+P)v^i}{1-v^2/c^2} \\
+&T^{jk} = \frac{\varrho + P}{1-v^2/c^2}\frac{v^jv^k}{c^2}+P\delta^{jk}
+\end{split}
+\]
+Studiamo ore il limite non relativistico di queste componenti, con il seguente accorgimento: non è sufficiente ignorare i termini di ordine $v/c$ o superiori, ma è necessario notare che $\varrho$ contiene l'energia di quiete $\mu c^2$, che si sviluppa nel seguente modo:
+\[
+\mu = \mu_0\sqrt{1-\frac{v^2}{c^2}} \simeq \mu_0 -\frac{\mu_0v^2}{2c^2}
+\]
+dove $\mu_0$ è la densità di massa non relativistica. Inoltre sarà necessario notare che l'energia interna $\varepsilon(\mu)$ e la pressione sono indubbiamente trascurabili rispetto a $\mu c^2$. Dunque:
+\begin{align*}
+T^{00} &= \frac{(\mu c^2+\mu\varepsilon)+Pv^2/c^2}{1-v^2/c^2} \simeq \frac{\mu c^2+\mu\varepsilon}{1-v^2/c^2} = \frac{\mu_0c^2+\mu_0\varepsilon}{\sqrt{1-v^2/c^2}} \\
+&\simeq (\mu_0c^2+\mu_0\varepsilon)\left( 1+\frac{1}{2}\frac{v^2}{c^2} \right) \simeq \mu_0c^2 +\mu_0\varepsilon + \frac{1}{2}\mu_0v^2
+\end{align*}
+\[
+c^{-1}T^{0i} \simeq \frac{(\mu c^2+\mu\varepsilon)v^i/c^2}{1-v^2/c^2} = \frac{(\mu c^2+\mu\varepsilon)v^i/c^2}{1-v^2/c^2} \simeq (\mu_0c^2+\mu_0\varepsilon)\frac{v^i}{c^2}\left(1+\frac{1}{2}\frac{v^2}{c^2} \right) \simeq \mu_0 v^i
+\]
+\[
+T^{ik} \simeq \mu_0v^{i}v^{k}+\delta^{ik}P
+\]
+Dunque le componenti non relativistiche del tensore energia-impulso, che coincidono esattamente con i risultati della meccanica dei fluidi non relativistica, per il fluido perfetto sono:
+\begin{equation}
+\begin{cases}
+T^{00} - \mu_0c^2 \simeq \frac{1}{2}\mu_0v^2+\mu_0\varepsilon \\
+c^{-1}T^{0i} \simeq \mu_0v^i \\
+T^{ik} \simeq \mu_0v^{i}v^{k}+\delta^{ik}P \\
+\end{cases}
+\end{equation}
+Quanto possiamo fare ore è ricavare le equazioni del moto attraverso la legge di conservazione del tensore energia-impulso
+\[
+\partial_{\mu}T^{\mu\nu}=0
+\]
+Otteniamo:
+\[
+0 = \partial_{\mu}\left[ (P+\varrho)U^{\nu}U^{\mu}+\eta^{\mu\nu}P \right]
+\]
+da cui, contraendo con $U^{\nu}$:
+\[
+-U^{\nu}\partial_{\nu}P = (\varrho+P)U^{\mu}U^{\nu}\partial_{\mu}U^{\nu}-\partial_{\mu}[ (\varrho+P)U^{\mu}]
+\]
+Ora, siccome $U^{\nu}\partial_{\mu}U^{\nu} = \partial_{\mu}(U_{\nu}U^{\nu})-U^{\nu}\partial_{\mu}U_{\nu}$, cioè $U_{\nu}\partial_{\mu}U^{\nu}=0$, otteniamo:
+\[
+\partial_{\mu}[(\varrho+P)U^{\mu}] = U^{\nu}\partial_{\nu}P
+\]
+Ciò significa che possiamo sostituire questo termine nell'equazione di partenza, giungendo a:
+\begin{equation}
+(P+\varrho)U^{\mu}\partial_{\mu}U^{\nu} = -\partial_{\nu}P-U^{\nu}U^{\mu}\partial_{\mu}P
+\end{equation}
+Questa equazione si riduce, nel limite non relativistico, all'equazione di Eulero. A questo punto non abbiamo ancora introdotto la richiesta di isoentropia. Per farlo, riscriviamo l'equazione (le ultime considerazioni non sono chiare!!) 
+
+\subsection{Particella libera}
+
 \end{document}
