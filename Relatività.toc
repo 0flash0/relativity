@@ -38,8 +38,7 @@
 \contentsline {subsection}{\numberline {2.3.7}L'iperbole invariante}{39}{subsection.2.3.7}
 \contentsline {subsection}{\numberline {2.3.8}Addizione delle velocit\IeC {\`a}}{41}{subsection.2.3.8}
 \contentsline {subsection}{\numberline {2.3.9}Effetto Doppler relativistico}{42}{subsection.2.3.9}
-\contentsline {subsection}{\numberline {2.3.10}Supersonic-boom}{43}{subsection.2.3.10}
-\contentsline {subsection}{\numberline {2.3.11}Onde di materia}{43}{subsection.2.3.11}
+\contentsline {subsection}{\numberline {2.3.10}Onde di materia}{43}{subsection.2.3.10}
 \contentsline {chapter}{\numberline {3}Analisi tensoriale in relativit\IeC {\`a} speciale}{45}{chapter.3}
 \contentsline {section}{\numberline {3.1}Vettori}{45}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Notazione}{45}{subsection.3.1.1}
@@ -66,30 +65,33 @@
 \contentsline {section}{\numberline {5.2}Sistemi di particelle}{63}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Quadrimpulso totale}{63}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Sistema del centro di massa}{64}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Energia di soglia}{65}{subsection.5.2.3}
-\contentsline {paragraph}{Il pione}{65}{section*.2}
-\contentsline {paragraph}{Il mesone $J/\psi $}{66}{section*.3}
-\contentsline {paragraph}{Decadimento di un fotone}{66}{section*.4}
-\contentsline {paragraph}{Nelle stelle}{67}{section*.5}
-\contentsline {subsection}{\numberline {5.2.4}Decadimenti}{67}{subsection.5.2.4}
-\contentsline {paragraph}{Decadimento in volo}{68}{section*.6}
-\contentsline {subsection}{\numberline {5.2.5}Effetto Compton relativistico}{69}{subsection.5.2.5}
-\contentsline {section}{\numberline {5.3}Il momento angolare}{69}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Precessione di Thomas}{70}{subsection.5.3.1}
-\contentsline {chapter}{\numberline {6}Elettrodinamica covariante}{71}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equazioni in forma covariante}{71}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Corrente elettrica}{72}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Trasformazione dei campi}{74}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Simmetrie locali}{74}{subsection.6.1.3}
-\contentsline {chapter}{\numberline {7}Principi variazionali}{77}{chapter.7}
-\contentsline {section}{\numberline {7.1}Equazioni di Eulero-Lagrange}{77}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Campo scalare}{78}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Azione per una particella}{79}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Azione per il campo elettromagnetico}{80}{section.7.2}
-\contentsline {section}{\numberline {7.3}Il tensore energia-impulso}{82}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Il caso generale}{82}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Ambiguit\IeC {\`a} di $T^{\nu }_{\mu }$}{84}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Significato delle componenti}{84}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Campo scalare}{85}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Campo elettromagnetico}{85}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Fluido perfetto}{86}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {5.2.3}Teorema di equivalenza massa-energia}{65}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Collisioni}{66}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Energia di soglia}{66}{subsection.5.3.1}
+\contentsline {paragraph}{Il pione}{66}{section*.2}
+\contentsline {paragraph}{Il mesone $J/\psi $}{67}{section*.3}
+\contentsline {paragraph}{Decadimento di un fotone}{67}{section*.4}
+\contentsline {paragraph}{Nelle stelle}{68}{section*.5}
+\contentsline {subsection}{\numberline {5.3.2}Decadimenti}{68}{subsection.5.3.2}
+\contentsline {paragraph}{Decadimento in volo}{69}{section*.6}
+\contentsline {subsection}{\numberline {5.3.3}Effetto Compton relativistico}{70}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Il momento angolare}{70}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Precessione di Thomas}{71}{subsection.5.4.1}
+\contentsline {chapter}{\numberline {6}Elettrodinamica covariante}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equazioni in forma covariante}{73}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Corrente elettrica}{74}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Trasformazione dei campi}{76}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Simmetrie locali}{76}{subsection.6.1.3}
+\contentsline {chapter}{\numberline {7}Principi variazionali}{79}{chapter.7}
+\contentsline {section}{\numberline {7.1}Equazioni di Eulero-Lagrange}{79}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Campo scalare}{80}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Azione per una particella}{81}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Azione per il campo elettromagnetico}{82}{section.7.2}
+\contentsline {section}{\numberline {7.3}Il tensore energia-impulso}{84}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Il caso generale}{84}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Ambiguit\IeC {\`a} di $T^{\nu }_{\mu }$}{86}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Significato delle componenti}{86}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Campo scalare}{87}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Campo elettromagnetico}{87}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Fluido perfetto}{88}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Particella libera}{90}{subsection.7.3.7}

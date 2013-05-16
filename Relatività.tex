@@ -1199,10 +1199,8 @@ L'aberrazione, invece, è contenuta nella (\ref{eq:nutan}), valida per ogni copp
 \[
 \tan\vartheta' = \frac{\sin\vartheta}{\gamma \left( \cos\vartheta+\frac{v}{c} \right)}
 \]
-\subsection{Supersonic-boom}
-???
 \subsection{Onde di materia}
-???
+da aggiungere (nuove dispense Vanzo)
 \chapter{Analisi tensoriale in relatività speciale}
 \section{Vettori}
 Rivediamo in questa sezione alcune nozioni di algebra vettoriale, anche con il solo semplice scopo di concordare sulla nuova notazione che verrà utilizzata. 
@@ -2028,21 +2026,54 @@ Per un sistema $S$ che si muove con velocità $\textbf{u}_{ZM}$ rispetto al sist
 \overline{P}_S = M \gamma(u_{ZM} (1,\textbf{u}_{ZM})
 \end{equation}
 
-
-
-%\subsection{$E=mc^2$}
-%Analizziamo un caso generale studiato da Lorentz nel 1911, scrivendo il quadrimpulso di un sistema chiuso arbitrario $\Sigma$:
+\subsection{Teorema di equivalenza massa-energia}
+Abbiamo già notato che la massa invariante di un sistema arbitrario è uguale a $E_0 /c^2$ 
+(l'energia nel sistema di quiete $\textbf{F}_0$ ), se valgono le trasformazioni di Lorentz. Ma possiamo 
+andare oltre. Consideriamo un sistema fisico arbitrario coinvolto in un processo di emissione di due particelle identiche in direzioni opposte. Non si pensi alle particelle come a punti materiali, bensì come a sistemi composti, quali due particelle alfa, o due nuclei più complessi, oppure due impulsi di onde elettromagnetiche. Consideriamo il processo 
+nel riferimento del centro di massa $\textbf{F}_0$ , dove $\textbf{P} = 0$. In tale riferimento il sistema rimane 
+fermo se vale la legge di conservazione del momento, mentre la conservazione dell'energia 
+richiede che:
+\[
+E'_0-E'_1 = 2\varepsilon
+\]
+dove $E'_0$ è l'energia prima della collisione, $E'_1$ l'energia dopo la collisione e $2\varepsilon$ l'energia dei due frammenti. In un laboratorio rispetto al quale il sistema si muove con velocità $V$ lungo l'asse $x$, l'energia dei frammenti è:
+\[
+\varepsilon_1 = \gamma(\varepsilon+Vp\cos\alpha) \qquad \varepsilon_2 = \gamma(\varepsilon-Vp\cos\alpha)
+\]
+e dalla conservazione dell'energia abbiamo
+\[
+E_0-E_1 = \varepsilon_1 +\varepsilon_2 = 2\gamma\varepsilon = \frac{2\varepsilon}{\sqrt{1-V^2/c^2}}
+\]
+Possiamo anche scrivere:
+\[
+(E_0-E'_0) - (E_1-E'_1) = 2\gamma\varepsilon-2\varepsilon = 2\varepsilon \left( \frac{1}{\sqrt{1-V^2/c^2}}-1 \right)
+\]
+Il primo termine rappresenta la differenza tra l'energia del sistema quando la sua velocità è $V$ e quando è invece in quiete. Dunque, per basse velocità $E_0-E'_0 \simeq M_0V^2/2$, dove $M_0$ è la massa iniziale. Analogamente per il secondo termine, se $M_1$ è la massa finale, si ottiene $E_1-E'_1 \simeq M_1V^2/2$. Ciò significa che, al primo ordine in $V/c$ è verificata
+\[
+\frac{V^2}{2} (M_0 - M_1) = \frac{V^2}{2}\Delta M \simeq 2\varepsilon \frac{1}{2}\frac{V^2}{c^2}
+\]
+cioè
+\begin{equation}\label{eq:5.12}
+\Delta M = \frac{2\varepsilon}{c^2}
+\end{equation}
+Si evince dalla \eqref{eq:5.12} l'equivalenza massa-energia: in seguito all'emissione, il sistema perde massa (e dunque inerzia) nella quantità indicata. Chiaramente nel riferimento del laboratorio il sistema perde la quantità di moto
+\[
+\Delta \textbf{P} = \frac{\Delta M}{\sqrt{1-V^2/c^2}}\textbf{V} = \frac{2\varepsilon/c^2}{\sqrt{1-V^2/c^2}}\textbf{V}
+\]
+%Studiamo ora il caso più generale, considerato da Lorentz. Il quadrimpulso di un sistema chiuso arbitrario $\Sigma_1$ è scrivibile come:
 %\[
-%\textbf{p} = \frac{m_0\textbf{u}}{\sqrt{1-v^2/c^2}} \qquad P^0 = \frac{m_0c}{\sqrt{1-u^2/c^2}}
+%\textbf{P} = \frac{m_0\textbf{u}}{\sqrt{1-u^2/c^2}}=m\textbf{u} \qquad P^0 = \frac{m_0c}{\sqrt{1-u^2/c^2}}=mc
 %\]
-%dove $\textbf{u}$ è la velocità del sistema di riferimento del centro di massa $\textbf{F}_0$; considerando per semplicità una trasformazione di Lorentz lungo l'asse $x$ si ha ($\beta = v/c$):
+%dove $\textbf{u}$ è la velocità del sistema di riferimento $\textbf{F}_0$ del centro di massa. Considerando per semplicità una trasformazione di Lorentz lungo l'asse $x$ si ha:
 %\[
-%p'_x = \frac{p_x-mv}{\sqrt{1-\beta^2}} \quad p'_y=p_y \quad p'_z=p_z
-%\]
-%Ora il sistema interagisce con un altro sistema $\Sigma_2$. Le leggi di conservazione impongono che:
+%P'_x = \frac{P_x-mv}{\sqrt{1-v^2/c^2}} \qquad P'_y = P_y \qquad P'_z = P_z
+%\] 
+%Ora il sistema interagisca con un altro sistema, $\Sigma_2$. Le leggi di conservazione affermano che:
 %\[
-%\Delta\textbf{p}_1+\Delta\textbf{p}_2 = 0 \quad \Delta\textbf{p}'_1+\Delta\textbf{p}'_2=0 \quad \Delta E_1 + \Delta E_2 =0
+%\Delta \textbf{P}_1 + \Delta \textbf{P}_2 = 0 \qquad \Delta P'_1 + \Delta P'_2 = 0 \qquad \Delta E_1 + \Delta E_2 =0
 %\]
+Quindi possiamo concludere che, \emph{se l'energia e la quantità di moto sono le componenti di un quadrivettore che si conserva per tutti i processi fisici nei sistemi isolati}, allora ad ogni trasferimento di energia $\Delta E$ corrisponde un trasferimento di massa $\Delta M = \Delta E /c^2$. In generale l'interazione cambia sia la massa che la velocità del sistema, e dunque per $\Delta M$ si deve intendere la variazione della massa relativistica. 
+\section{Collisioni}
 \subsection{Energia di soglia}
 \paragraph{Il pione}
 Consideriamo la seguente collisione relativistica:
