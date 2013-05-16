@@ -2978,5 +2978,45 @@ Ciò significa che possiamo sostituire questo termine nell'equazione di partenza
 Questa equazione si riduce, nel limite non relativistico, all'equazione di Eulero. A questo punto non abbiamo ancora introdotto la richiesta di isoentropia. Per farlo, riscriviamo l'equazione (le ultime considerazioni non sono chiare!!) 
 
 \subsection{Particella libera}
+L'energia di una particella libera è $P^0 = m\gamma$, mentre la sua quantità di moto è data in componenti da $P^j = m\gamma v^j$. Estendendo ad un sistema di particelle libere immaginiamo definiamo la densità di quantità di moto come
+\begin{equation}
+T^{i0}(t,\textbf{x}) = \sum_n P^i_n(t)\delta^{(3)}(\textbf{x}-\textbf{z}_n(t))
+\end{equation}
+mentre la corrente come
+\begin{equation}
+T^{jk}(t,\textbf{x}) = \sum_n P_n^j(t)\frac{dz_n^k(t)}{dt}\delta^{(3)}(\textbf{x}-\textbf{z}_n(t))
+\end{equation}
+dove stiamo assumendo, attraverso l'utilizzo della delta, che la densità di massa sia unicamente distribuita sulla linee di universo della particelle. Le formule scritte sono le componenti del tensore
+\begin{equation}
+T^{\mu\nu} (t,\textbf{x})=\sum_n P_n^{\mu}v_n^{\nu}\delta^{(3)}(\textbf{x}-\textbf{z}_n(t)) \qquad v_n^{\nu} = \frac{dz_n^{\nu}}{dt}
+\end{equation}
+In generale possiamo supporre che le linee di universo siano parametrizzate attraverso un parametro invariante qualsiasi $p$, e dunque possiamo riscrivere l'identità precedente nella seguente maniera:
+\[
+T^{\mu\nu} = \sum_n \int dp \delta^{(4)}(x^{\mu}-z_n^{\mu}(p))P_n^{\mu}\frac{dz_n^{\nu}}{dp}
+\]
+La scrittura attuale rende esplicita la natura tensoriale di $T^{\mu\nu}$. Oppure, noto il fatto che
+\[
+P^{\mu}_n = E_n \frac{dz_n^{\mu}}{dt} 
+\]
+possiamo scrivere in maniera altrettanto utile
+\begin{equation}\label{eq:7.16}
+T^{\mu\nu}(t,\textbf{x}) = \sum_n \frac{P_n^{\mu}P_n^{\nu}}{E_n}\delta^{(3)}(\textbf{x}-\textbf{z}_n(t))
+\end{equation}
+da cui si evince immediatamente la simmetria del tensore. Dalla relazione \eqref{eq:7.16} ricaviamo immediatamente la traccia $T$:
+\[
+T\equiv T^{\mu\mu} = -\sum_n \frac{m_{0n}^2\sqrt{1-v_n^2}}{m_{0n}}\delta^{(3)}(\textbf{x}-\textbf{z}_n(t)) = -\sum_n m_{0n}\sqrt{1-v_n^2}\delta^{(3)}(\textbf{x}-\textbf{z}_n(t))
+\]
+La media spaziale sull'unità di volume è ottenibile come segue:
+\[
+\int T d^3x = -\sum_n m_{0n}\sqrt{1-v_n^2}
+\]
+ed è cioè negativa. \\
+Quanto possiamo ora è calcolare la legge di conservazione del tensore energia impulso in due diversi casi: 
+\begin{enumerate}[i.]
+\item \emph{le particelle si muovono sotto l'azione di un campo elettromagnetico}: usando l'espressione del tensore parametrizzato rispetto al tempo proprio $\tau_n$ otteniamo:
+\[
+\partial_{\mu}T^{\mu\nu}(t,\textbf{x}) = 
+\]
 
+\end{enumerate}
 \end{document}
